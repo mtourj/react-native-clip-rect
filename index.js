@@ -1,16 +1,10 @@
-'use strict';
+import React, { PureComponent } from 'react';
+import { ART, StyleSheet, Platform } from 'react-native';
+const { Shape,Surface,Path } = ART;
 
-const React = require('react');
-const ReactNative = require('react-native');
-const {
-    Shape,
-    Surface,
-    Path,
-} = ReactNative.ART;
-
-const ClipRectIOS = React.createClass({
-    render: function () {
-        const style = ReactNative.StyleSheet.flatten(this.props.style);
+class ClipRectIOS extends PureComponent {
+    render() {
+        const style = StyleSheet.flatten(this.props.style);
         let { width, height, borderRadius, borderTopLeftRadius, borderTopRightRadius, borderBottomRightRadius, borderBottomLeftRadius, color } = style;
         borderRadius = borderRadius || 0;
         const tl = borderTopLeftRadius || borderRadius;
@@ -42,8 +36,8 @@ const ClipRectIOS = React.createClass({
                 <Shape d={path} fill={color} />
             </Surface>
         );
-    },
-});
+    }
+};
 
 const TIMES = 30;
 const _X = (r, d) => Math.cos(Math.PI / 180 * d) * r;
@@ -55,9 +49,9 @@ const arc = (path, x, y, r, t) => {
     }
 };
 
-const ClipRectAndroid = React.createClass({
-    render: function () {
-        const style = ReactNative.StyleSheet.flatten(this.props.style);
+class ClipRectAndroid extends PureComponent {
+    render() {
+        const style = StyleSheet.flatten(this.props.style);
         let { width, height, borderRadius, borderTopLeftRadius, borderTopRightRadius, borderBottomRightRadius, borderBottomLeftRadius, color } = style;
         borderRadius = borderRadius || 0;
         const tl = borderTopLeftRadius || borderRadius;
@@ -83,13 +77,13 @@ const ClipRectAndroid = React.createClass({
         .line(width, 0)
         .line(0, -height)
         .line(-width, 0);
-
+        
         return (
             <Surface width={width} height={height} style={{ backgroundColor:'transparent' }}>
                 <Shape d={path} fill={color} />
             </Surface>
         );
-    },
-});
+    }
+};
 
-module.exports = ReactNative.Platform.OS === 'android' ? ClipRectAndroid : ClipRectIOS;
+export default Platform.OS === 'android' ? ClipRectAndroid : ClipRectIOS;

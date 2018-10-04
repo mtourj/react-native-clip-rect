@@ -1,6 +1,6 @@
 {
-    "name": "@remobile/react-native-clip-rect",
-    "version": "1.0.0",
+    "name": "@jkmf/react-native-clip-rect",
+    "version": "1.0.1",
     "description": "A clip react for react-native, the shape is center highlight and around darkness",
     "main": "index.js",
     "author": {
@@ -17,15 +17,15 @@
         "overlay",
         "clip",
         "art",
-        "remobile",
+        "jkmf",
         "mobile"
     ],
-    "homepage": "https://github.com/remobile/react-native-clip-rect",
+    "homepage": "https://github.com/jkmf/react-native-clip-rect",
     "bugs": {
-        "url": "https://github.com/remobile/react-native-clip-rect/issues"
+        "url": "https://github.com/jkmf/react-native-clip-rect/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/remobile/react-native-clip-rect.git"
+        "url": "git://github.com/jkmf/react-native-clip-rect.git"
     }
 }
