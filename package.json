@@ -1,31 +1,34 @@
 {
-    "name": "@jkmf/react-native-clip-rect",
-    "version": "1.0.1",
-    "description": "A clip react for react-native, the shape is center highlight and around darkness",
-    "main": "index.js",
-    "author": {
-        "name": "YunJiang.Fang",
-        "email": "42550564@qq.com"
-    },
-    "license": "MIT",
-    "keywords": [
-        "react-native",
-        "react-component",
-        "ios",
-        "android",
-        "rect",
-        "overlay",
-        "clip",
-        "art",
-        "jkmf",
-        "mobile"
-    ],
-    "homepage": "https://github.com/jkmf/react-native-clip-rect",
-    "bugs": {
-        "url": "https://github.com/jkmf/react-native-clip-rect/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/jkmf/react-native-clip-rect.git"
-    }
+  "name": "@mtourj/react-native-clip-rect",
+  "version": "1.0.1",
+  "description": "A clip react for react-native, the shape is center highlight and around darkness",
+  "main": "index.js",
+  "author": "Mohammad Tourjoman <mtourjoman01@hotmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "ios",
+    "android",
+    "rect",
+    "overlay",
+    "clip",
+    "art",
+    "jkmf",
+    "mobile"
+  ],
+  "homepage": "https://github.com/mtourj/react-native-clip-rect",
+  "bugs": {
+    "url": "https://github.com/mtourj/react-native-clip-rect/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mtourj/react-native-clip-rect.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@react-native-community/art": "^1.2.0"
+  }
 }
