@@ -1,6 +1,6 @@
 {
   "name": "@mtourj/react-native-clip-rect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A clip react for react-native, the shape is center highlight and around darkness",
   "main": "index.js",
   "author": "Mohammad Tourjoman <mtourjoman01@hotmail.com>",
@@ -14,7 +14,7 @@
     "overlay",
     "clip",
     "art",
-    "jkmf",
+    "mtourj",
     "mobile"
   ],
   "homepage": "https://github.com/mtourj/react-native-clip-rect",
@@ -30,5 +30,9 @@
   },
   "dependencies": {
     "@react-native-community/art": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.44",
+    "@types/react-native": "^0.63.2"
   }
 }

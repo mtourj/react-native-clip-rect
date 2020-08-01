@@ -2,9 +2,13 @@ import React, { PureComponent } from 'react';
 import { StyleSheet, Platform } from 'react-native';
 import { Shape, Surface, Path } from '@react-native-community/art';
 
-class ClipRectIOS extends PureComponent {
+interface IClipRectProps {
+  style: any;
+}
+
+class ClipRectIOS extends PureComponent<IClipRectProps> {
   render() {
-    const style = StyleSheet.flatten(this.props.styles);
+    const style = StyleSheet.flatten(this.props.style);
     let {
       width,
       height,
@@ -67,7 +71,7 @@ const arc = (path, x, y, r, t) => {
   }
 };
 
-class ClipRectAndroid extends PureComponent {
+class ClipRectAndroid extends PureComponent<IClipRectProps> {
   render() {
     const style = StyleSheet.flatten(this.props.style);
     let {
