@@ -1,6 +1,6 @@
 {
   "name": "@mtourj/react-native-clip-rect",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A clip react for react-native, the shape is center highlight and around darkness",
   "main": "index.tsx",
   "author": "Mohammad Tourjoman <mtourjoman01@hotmail.com>",
@@ -29,7 +29,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@react-native-community/art": "^1.2.0"
+    "react-native-svg": "^12.1.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.44",
