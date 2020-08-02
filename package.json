@@ -1,6 +1,6 @@
 {
   "name": "@mtourj/react-native-clip-rect",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A clip react for react-native, the shape is center highlight and around darkness",
   "main": "index.tsx",
   "author": "Mohammad Tourjoman <mtourjoman01@hotmail.com>",

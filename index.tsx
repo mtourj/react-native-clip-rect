@@ -84,7 +84,7 @@ class ClipRect extends PureComponent<IClipRectProps> {
         clipPath='url(#clip)'
       >
         <Defs>
-          <ClipPath id='clip'>
+          <ClipPath id='clip' clipRule='evenodd'>
             <Rect width='100%' height='100%' />
             <Path fill='black' d={path.path} />
           </ClipPath>
